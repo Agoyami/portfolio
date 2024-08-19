@@ -1,6 +1,7 @@
 :root {
+    --color-1: white;
+    --color-2: grey;
     --color-3: black;
-
 }
 
 body, html {
@@ -8,23 +9,131 @@ body, html {
     margin: 0;
     position: relative;
 }
-.container-p {
+
+.container-p2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: auto;
     height: 500px;
-    gap: 10px;
     outline: solid 1px black;
   }
   
 .container-1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
     position: absolute;
-    top: 15%;
+    width: auto ;
+    height: auto;
+    gap: 30px;
     outline: solid 1px black;
 }
 
-/*.title-1 {
+.container-2 {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 350px;
+    gap: 250px;
+    outline: solid 1px black;
+}
+
+.button-1 {
+    margin: 10px;
+    margin-top: 30px;
+    height: 20px;
+   /* background-color: var(--color-2);*/
+    padding: 20px;
+    border:color black;
+    cursor: pointer;
+}
+
+.title-1 {
+    margin-top: 50px;
+    outline: solid 1px black;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 2.5rem;
+}
+
+.title-2 {
+    margin-top: 10px;
+    outline: solid 1px black;
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+.container-p3 {
+    height: 807px;
+    outline: solid 1px black;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    outline: solid 1px black;
+}
+
+.title-3 {
+    margin-top: auto auto;
+    width: 100%;
+    outline: solid 1px black;
+    font-size: 1.75rem;
+}
+
+.container-4 {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    outline: solid 1px black;
+}
+
+.text-1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    word-break: break-all;
+    width: 80%;
+    outline: solid 1px black;
+}
+
+.img-1 { 
+    width: auto;
+    height: auto;
+    margin: 10px;
+    outline: solid 1px black;
+}
+
+.container-p4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 500px;
+    outline: solid 1px black;
+}
+
+.container-5 {
+    display: flex;
+    flex-direction: column;
+    outline: solid 1px black;
+}
+
+.title-4 {
+    margin-top: auto auto;
+    width: 100%;
+    outline: solid 1px black;
+    font-size: 1.75rem;
+}
+
+.container-6 {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: auto;
+    outline: solid 1px black;
 }
