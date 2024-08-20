@@ -142,17 +142,11 @@ body, html {
     0% {
       transform: translateX(0%);
     }
-    20% {
+    25% {
         transform: translateX(-100%);
     }
-    40% {
+    50% {
         transform: translateX(-200%);
-    }
-    60% {
-        transform: translateX(-300%);
-    }
-    80% {
-      transform: translateX(-400%);
     }
     100% {
         transform: translateX(0%);
@@ -183,35 +177,33 @@ body, html {
 }
 
 .container-7 {
-    position: relative;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     width: auto;
     margin: 50px;
-    opacity: 1;
+    border-radius: 10px;
     outline: solid 1px black;
 }
 
-.name {
-    margin: 10px;
+.text-3 {
     display: flex;
-    font-size: 2.25rem;
-    font-weight: bolder;
-    color: var(--color-3); 
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    outline: solid 1px black;
+
 }
 
-.prof {
-    margin: 10px;
-    display: flex;
-    font-size: 1.75rem;
-    font-weight: bolder;
-    color: var(--color-3); 
+.name, .prof, .spe {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-.spe {
-    margin: 10px;
-    display: flex;
-    font-size: 1.50rem;
-    font-weight: bolder;
-    color: var(--color-3); 
+.form {
+    outline: solid 1px black;
+    width: 100%;
+    order: 2; /* Assure que le formulaire est affiché après les éléments de texte */
+    align-self: flex-end; /* Aligne le formulaire en bas du conteneur */
 }

@@ -2,9 +2,10 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./img//test.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
   </head>
 
   <body>
@@ -56,12 +57,29 @@
       </div>
       <div class="container-p5">
         <div class="container-7">
+          <div class="text-3">
           <p class="name">qsljdlqsjdlqjdlqsj</p>
           <p class="prof">iqjdlqjsdlj</p>
           <p class="spe">qskljdlqsjdlqsjdl</p>
         </div>
-      </div>
 
+
+          <form method="get" id="formulaire" class="form">
+          <label for="mail">Adresse Mail</label>
+          <input type="text" name="mail" class="input-mail" id="mail">
+
+          <label for="name">Nom et Prénom</label>
+          <input type="text" name="name" id="name" class="input-name">
+
+          <label for="msg">Message</label>
+          <textarea name="msg" id="msg" placeholder="Message que vous voulez transmettre"></textarea>
+
+          <button type="submit" class="btn-send" onclick="recupfunc()">Envoyer</button>
+          </form>
+        </div>
+        
+      </div>
+      <script src="./src/form.js"></script>
       <script src="./src/card.js"></script>
     <script type="module" src="./src/preloader.js"></script>
   </body>
